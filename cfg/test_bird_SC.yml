@@ -1,0 +1,27 @@
+DATASET_NAME: 'birds'
+DATA_DIR: 'E:/samsung/datasets/GEN/birds/'
+PRETRAINED_DIR: 'E:/samsung/pretrained/birds/'
+CKPT: 'E:/samsung/pretrained/birds/netG_epoch_292_12.65.pth'
+GPU_ID: 0
+WORKERS: 0
+
+TREE:
+    BRANCH_NUM: 3
+
+
+TRAIN:
+    FLAG: False
+
+TEST:
+    BATCH_SIZE: 10
+
+GAN:
+    DF_DIM: 64
+    GF_DIM: 32
+    Z_DIM: 100
+    R_NUM: 2
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 10
+    WORDS_NUM: 18

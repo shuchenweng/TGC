@@ -1,0 +1,36 @@
+DATASET_NAME: 'bird'
+DATA_DIR: '/MountedData/'
+MODEL_DIR: 'modelsets/'
+PRETRAINED_DIR: '/MountedData/pretrained/'
+GPU_ID: 0
+WORKERS: 1
+save_iter: 999999
+
+TREE:
+    BRANCH_NUM: 3
+
+
+TRAIN:
+    FLAG: True
+    USE_MLT: True
+    BATCH_SIZE: 256  # 22
+    MAX_EPOCH: 1000
+    SNAPSHOT_INTERVAL: 15
+    DISCRIMINATOR_LR: 0.0002
+    GENERATOR_LR: 0.0002
+
+
+TEST:
+    BATCH_SIZE: 256
+
+GAN:
+    DF_DIM: 64
+    GF_DIM: 32
+    Z_DIM: 100
+    R_NUM: 2
+    P_NUM: 33
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 10
+    WORDS_NUM: 13
